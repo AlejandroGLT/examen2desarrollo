@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta del Clima</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #222875;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 225, 255, 0.836);
+            padding: 20px;
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        #cityInput {
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #0056b3;
+            color: #0e0606;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #4df3ff;
+        }
+
+        #temperature, #description {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>APLICACIÓN DE CLIMA</h1>
+        <div>
+            <label for="cityInput">Ciudad:</label>
+            <input type="text" id="cityInput" placeholder="Ciudad a consultar: ">
+            <button onclick="getWeather()">Obtener Clima</button>
+        </div>
+        <div id="temperature">
+            Temperatura
+        </div>
+        <div id="description">
+            Descripción
+        </div>
+    </div>
+    <script src="./caso.js"></script>
+</body>
+</html>
